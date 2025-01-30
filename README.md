@@ -10,7 +10,7 @@ Notes in Markdown
    - `mkdir -p ~/Documents`
    - `git clone REPO_URL_FROM_STEP_1 temp`
    - `mv temp ~/Documents/Notes`
-3. Add an environment variable for your NOTES_DIR and an alias that points to `_note.sh` to your `.bashrc` (suggestion: `n`)
+3. Add a `NOTES_DIR` environment variable and an alias that points to `_note.sh` to your `.bashrc` (suggestion: `n`)
    - `echo 'export NOTES_DIR="~/Documents/Notes"' >> ~/.bashrc`
    - `echo 'alias n="${NOTES_DIR}/_note.sh"' >> ~/.bashrc`
 4. Create note with `[alias] description`
