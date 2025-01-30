@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# Add next line to ~/.bashrc
-# alias n=~/Documents/Notes/_note.sh
+# Add next 2 lines to ~/.bashrc
+# export NOTES_DIR="~/Documents/Notes"
+# alias n="${NOTES_DIR}/_note.sh"
 
-DIR=~/Documents/Notes/
+DIR="${NOTES_DIR}"
 TIMESTAMP=`date '+%Y%m%d_%H%M'`
 NAME="$@"
 NAME="${NAME// /_}"
